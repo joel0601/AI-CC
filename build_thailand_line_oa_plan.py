@@ -21,6 +21,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 DOCX_PATH = OUT / "泰国_LINE-OA课前运营与销售分配实验方案_v1.0.docx"
 MD_PATH = OUT / "泰国_LINE-OA课前运营与销售分配实验方案_v1.0.md"
 FLOW_MAIN = OUT / "flow_main.png"
+FLOW_SWIMLANE = OUT / "flow_swimlane.png"
 FLOW_ASSIGN = OUT / "flow_assignment.png"
 
 SKILL_ROOT = Path(
@@ -578,7 +579,7 @@ def build_docx():
     add_callout(doc, "重要边界", "LINE-OA 的自动化范围是“注册后至体验课流程结束”，不是长期营销机器人。体验课出席后不再继续课前消息；二次缺席后也不进行第三次预约。", fill=PALE_YELLOW, accent=ORANGE)
 
     add_heading(doc, "3. 端到端业务流程", 1)
-    add_picture_with_caption(doc, FLOW_MAIN, "图 1｜泰国 LINE-OA 从注册、关注补促到二约结束的主流程", width=6.25)
+    add_picture_with_caption(doc, FLOW_SWIMLANE, "图 1｜泰国 LINE-OA 跨部门泳道图：横向为部门，纵向为用户生命周期", width=6.25)
     add_heading(doc, "3.1 LINE-OA 自动化服务内容", 2)
     add_table(doc,
               ["阶段", "LINE-OA 动作", "结束/转移条件"],
@@ -806,36 +807,11 @@ def build_markdown():
 - 非安卓 70% 保持抢新，真人销售电话打通后才归属。
 - 首次缺席后只进行 1 次二约；二约成功后继续第二次提醒；第二次出席或再次缺席后结束。
 
-## 主流程
+## 主流程｜跨部门泳道图
 
-```mermaid
-flowchart TD
-  A[全渠道用户注册] --> B[完成页引导一键关注 LINE-OA]
-  B --> C{{注册后 5 分钟查询关注状态}}
-  C -- 已关注 --> D[绑定 user_id / 手机号 / LINE userId]
-  C -- 未关注且渠道/时段符合 --> E[注册后 +5 分钟 AI 首呼]
-  E -- 未接通 --> E2[+15 分钟重试]
-  E2 -- 未接通 --> E3[+30 分钟重试]
-  E --> F[接通后发送 OA 深链接短信]
-  E2 --> F
-  E3 --> F
-  E3 -- 仍未接通 --> X
-  F -- 后续关注成功 --> D
-  F -- 仍未关注 --> X[记录原因并结束本轮 OA 自动化]
-  D --> G[问好 / 轻量挖需 / FAQ]
-  G --> H{{是否已预约}}
-  H -- 否 --> I[OA 协助预约]
-  H -- 是 --> J[首次课前提醒]
-  I --> J
-  J --> K{{首次是否出席}}
-  K -- 是 --> L[OA SOP 结束，按渠道规则承接]
-  K -- 否 --> M[发起 1 次二次预约]
-  M -- 失败 --> N[记录原因并结束]
-  M -- 成功 --> O[第二次课前提醒]
-  O --> P{{第二次是否出席}}
-  P -- 是 --> Q[OA SOP 结束，按渠道规则承接]
-  P -- 否 --> R[再次缺席，OA SOP 结束]
-```
+![泰国 LINE-OA 跨部门泳道图](flow_swimlane.png)
+
+图 1 按用户生命周期纵向展开，横向标注市场/用户触点、产研/CRM、LINE-OA、AI 外呼/短信和销售运营/真人销售五类责任部门。每一行是一个业务时点，箭头表示跨部门交接和状态流转。
 
 ## 关注率建议
 

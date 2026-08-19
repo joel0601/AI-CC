@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1800">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#e8eef5" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#52708f"/>
+    </marker>
+    <style>
+      text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+      .title { font-size: 34px; font-weight: 700; fill: #163a5f; }
+      .subtitle { font-size: 17px; fill: #667085; }
+      .header { font-size: 19px; font-weight: 700; fill: #ffffff; }
+      .life { font-size: 18px; font-weight: 700; fill: #163a5f; }
+      .cell { font-size: 16px; fill: #1f2937; }
+      .small { font-size: 14px; fill: #667085; }
+      .arrow-label { font-size: 13px; fill: #52708f; font-weight: 600; }
+    </style>
+  </defs>
+  <rect width="2200" height="1800" fill="#ffffff"/>
+  <rect x="40" y="40" width="2120" height="1720" rx="24" fill="url(#grid)"/>
+  <text x="80" y="92" class="title">泰国 LINE-OA 课前运营与销售分配｜跨部门泳道图</text>
+  <text x="80" y="126" class="subtitle">横向：责任部门｜纵向：用户生命周期｜外呼仅对配置渠道启用，泰国时间 08:00–21:00，按 +5 / +15 / +30 分钟执行</text>
+
+  <rect x="60" y="160" width="2080" height="86" rx="12" fill="#163a5f"/>
+  <rect x="60" y="160" width="240" height="86" rx="12" fill="#234f78"/>
+  <text x="180" y="214" class="header" text-anchor="middle">生命周期</text>
+  <rect x="300" y="160" width="368" height="86" fill="#2e74b5"/>
+  <rect x="668" y="160" width="368" height="86" fill="#287a68"/>
+  <rect x="1036" y="160" width="368" height="86" fill="#7558a8"/>
+  <rect x="1404" y="160" width="368" height="86" fill="#b36b00"/>
+  <rect x="1772" y="160" width="368" height="86" rx="12" fill="#a23b52"/>
+  <text x="484" y="214" class="header" text-anchor="middle">市场 / 用户触点</text>
+  <text x="852" y="214" class="header" text-anchor="middle">产研 / CRM</text>
+  <text x="1220" y="214" class="header" text-anchor="middle">LINE-OA 运营</text>
+  <text x="1588" y="214" class="header" text-anchor="middle">AI 外呼 / 短信</text>
+  <text x="1956" y="214" class="header" text-anchor="middle">销售运营 / 真人销售</text>
+
+  <g stroke="#d6e0eb" stroke-width="2">
+    <line x1="60" y1="246" x2="2140" y2="246"/>
+    <line x1="60" y1="416" x2="2140" y2="416"/>
+    <line x1="60" y1="586" x2="2140" y2="586"/>
+    <line x1="60" y1="756" x2="2140" y2="756"/>
+    <line x1="60" y1="926" x2="2140" y2="926"/>
+    <line x1="60" y1="1096" x2="2140" y2="1096"/>
+    <line x1="60" y1="1266" x2="2140" y2="1266"/>
+    <line x1="60" y1="1436" x2="2140" y2="1436"/>
+    <line x1="60" y1="1606" x2="2140" y2="1606"/>
+    <line x1="60" y1="1776" x2="2140" y2="1776"/>
+    <line x1="300" y1="160" x2="300" y2="1776"/>
+    <line x1="668" y1="160" x2="668" y2="1776"/>
+    <line x1="1036" y1="160" x2="1036" y2="1776"/>
+    <line x1="1404" y1="160" x2="1404" y2="1776"/>
+    <line x1="1772" y1="160" x2="1772" y2="1776"/>
+  </g>
+
+  <g fill="#f6f9fc">
+    <rect x="60" y="246" width="2080" height="170"/>
+    <rect x="60" y="586" width="2080" height="170"/>
+    <rect x="60" y="926" width="2080" height="170"/>
+    <rect x="60" y="1266" width="2080" height="170"/>
+    <rect x="60" y="1606" width="2080" height="170"/>
+  </g>
+
+  <g class="life" text-anchor="middle">
+    <text x="180" y="328">1. 注册</text>
+    <text x="180" y="498">2. 注册完成页</text>
+    <text x="180" y="668">3. 注册后 +5 分钟</text>
+    <text x="180" y="838">4. +15 / +30 分钟</text>
+    <text x="180" y="1008">5. 已关注 / 进入 OA</text>
+    <text x="180" y="1178">6. 预约与课前</text>
+    <text x="180" y="1348">7. 首次体验课</text>
+    <text x="180" y="1518">8. 缺席后</text>
+    <text x="180" y="1688">9. 二约结果 / 结束</text>
+  </g>
+
+  <g fill="#eaf2f8" stroke="#2e74b5" stroke-width="2">
+    <rect x="326" y="276" width="316" height="110" rx="12"/>
+    <rect x="326" y="446" width="316" height="110" rx="12"/>
+  </g>
+  <g class="cell" text-anchor="middle">
+    <text x="484" y="319"><tspan x="484">用户提交注册信息</tspan><tspan x="484" dy="26">记录渠道 / 设备 / 手机号</tspan></text>
+    <text x="484" y="489"><tspan x="484">完成页展示关注价值</tspan><tspan x="484" dy="26">一键关注按钮 + 桌面二维码</tspan></text>
+  </g>
+
+  <g fill="#e8f5ee" stroke="#287a68" stroke-width="2">
+    <rect x="694" y="276" width="316" height="110" rx="12"/>
+    <rect x="694" y="616" width="316" height="110" rx="12"/>
+    <rect x="694" y="956" width="316" height="110" rx="12"/>
+  </g>
+  <g class="cell" text-anchor="middle">
+    <text x="852" y="319"><tspan x="852">创建用户主键与绑定任务</tspan><tspan x="852" dy="26">写入 source / experiment_group</tspan></text>
+    <text x="852" y="659"><tspan x="852">查询 user_id / 手机号</tspan><tspan x="852" dy="26">读取 LINE userId 与 friendFlag</tspan></text>
+    <text x="852" y="999"><tspan x="852">进入 OA 状态机</tspan><tspan x="852" dy="26">记录关注时间与触点归因</tspan></text>
+  </g>
+
+  <g fill="#f0ebfa" stroke="#7558a8" stroke-width="2">
+    <rect x="1062" y="446" width="316" height="110" rx="12"/>
+    <rect x="1062" y="956" width="316" height="110" rx="12"/>
+    <rect x="1062" y="1126" width="316" height="110" rx="12"/>
+    <rect x="1062" y="1466" width="316" height="110" rx="12"/>
+    <rect x="1062" y="1636" width="316" height="110" rx="12"/>
+  </g>
+  <g class="cell" text-anchor="middle">
+    <text x="1220" y="489"><tspan x="1220">发送欢迎语</tspan><tspan x="1220" dy="26">说明预约、提醒与问答价值</tspan></text>
+    <text x="1220" y="999"><tspan x="1220">问好 / 轻量挖需 / FAQ</tspan><tspan x="1220" dy="26">未预约则协助预约</tspan></text>
+    <text x="1220" y="1169"><tspan x="1220">确认课时并发送提醒</tspan><tspan x="1220" dy="26">首次课前执行标准 SOP</tspan></text>
+    <text x="1220" y="1509"><tspan x="1220">首次缺席发起一次二约</tspan><tspan x="1220" dy="26">二约成功才重新进入提醒</tspan></text>
+    <text x="1220" y="1679"><tspan x="1220">第二次提醒 / 出席确认</tspan><tspan x="1220" dy="26">第二次出席或再次缺席后结束</tspan></text>
+  </g>
+
+  <g fill="#fff5d9" stroke="#b36b00" stroke-width="2">
+    <rect x="1430" y="616" width="316" height="110" rx="12"/>
+    <rect x="1430" y="786" width="316" height="110" rx="12"/>
+  </g>
+  <g class="cell" text-anchor="middle">
+    <text x="1588" y="659"><tspan x="1588">未关注且渠道符合</tspan><tspan x="1588" dy="26">创建 +5 分钟 AI 首呼任务</tspan></text>
+    <text x="1588" y="829"><tspan x="1588">未接通则 +15 / +30 重试</tspan><tspan x="1588" dy="26">接通后发送 OA 深链接短信</tspan></text>
+  </g>
+
+  <g fill="#fcecef" stroke="#a23b52" stroke-width="2">
+    <rect x="1798" y="276" width="316" height="110" rx="12"/>
+    <rect x="1798" y="616" width="316" height="110" rx="12"/>
+    <rect x="1798" y="1126" width="316" height="110" rx="12"/>
+    <rect x="1798" y="1296" width="316" height="110" rx="12"/>
+  </g>
+  <g class="cell" text-anchor="middle">
+    <text x="1956" y="306"><tspan x="1956">系统执行归属规则</tspan><tspan x="1956" dy="25">安卓：出席后分配</tspan><tspan x="1956" dy="25">非安卓：30% 直分 / 70% 抢新</tspan></text>
+    <text x="1956" y="646"><tspan x="1956">70% 抢新组开始真人外呼</tspan><tspan x="1956" dy="25">真人电话打通后才归属</tspan><tspan x="1956" dy="25">未打通则保持无归属</tspan></text>
+    <text x="1956" y="1169"><tspan x="1956">30% 直分组</tspan><tspan x="1956" dy="26">销售用手机号搜索并以私人 LINE 沟通</tspan></text>
+    <text x="1956" y="1326"><tspan x="1956">首次出席后正式承接</tspan><tspan x="1956" dy="25">安卓用户此时分配销售</tspan><tspan x="1956" dy="25">OA 结束课前 SOP</tspan></text>
+  </g>
+
+  <g fill="#f0ebfa" stroke="#7558a8" stroke-width="2">
+    <rect x="1062" y="1296" width="316" height="110" rx="12"/>
+  </g>
+  <text x="1220" y="1339" class="cell" text-anchor="middle"><tspan x="1220">判断首次体验课是否出席</tspan><tspan x="1220" dy="26">出席则结束；缺席进入二约</tspan></text>
+
+  <g fill="#e8f5ee" stroke="#287a68" stroke-width="2">
+    <rect x="694" y="1636" width="316" height="110" rx="12"/>
+  </g>
+  <text x="852" y="1679" class="cell" text-anchor="middle"><tspan x="852">回写 attendance_status</tspan><tspan x="852" dy="26">记录 final_end_reason 并停发</tspan></text>
+
+  <g fill="none" stroke="#52708f" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M642 331 H694"/>
+    <path d="M852 386 V616"/>
+    <path d="M642 501 H1062"/>
+    <path d="M1010 671 H1430"/>
+    <path d="M1588 726 V786"/>
+    <path d="M852 726 V1011 H1062"/>
+    <path d="M1430 841 H1220 V956"/>
+    <path d="M1220 1066 V1126"/>
+    <path d="M1378 1181 H1798"/>
+    <path d="M1220 1236 V1296"/>
+    <path d="M1378 1351 H1798"/>
+    <path d="M1220 1406 V1466"/>
+    <path d="M1220 1576 V1636"/>
+    <path d="M1062 1691 H1010"/>
+  </g>
+  <g class="arrow-label">
+    <text x="1300" y="650">未关注</text>
+    <text x="1608" y="773">未接通</text>
+    <text x="890" y="880">已关注</text>
+    <text x="1235" y="870">补促后关注</text>
+    <text x="1640" y="1160">非安卓实验</text>
+    <text x="1530" y="1335">首次出席</text>
+    <text x="1238" y="1445">首次缺席</text>
+  </g>
+
+  <g transform="translate(80,1790)">
+    <circle cx="8" cy="0" r="7" fill="#2e74b5"/><text x="24" y="5" class="small">市场 / 入口</text>
+    <circle cx="180" cy="0" r="7" fill="#287a68"/><text x="196" y="5" class="small">系统 / CRM</text>
+    <circle cx="344" cy="0" r="7" fill="#7558a8"/><text x="360" y="5" class="small">OA 自动化</text>
+    <circle cx="508" cy="0" r="7" fill="#b36b00"/><text x="524" y="5" class="small">电话 / 短信</text>
+    <circle cx="672" cy="0" r="7" fill="#a23b52"/><text x="688" y="5" class="small">销售分配 / 承接</text>
+  </g>
+</svg>

@@ -10,3 +10,4 @@ outputs/**/font_probe.docx
 outputs/**/qa-font-data/
 outputs/**/rendered-*/
 outputs/**/dingtalk-sync.md
+outputs/**/*.html.bak-*
