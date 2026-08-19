@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local QA and render artifacts
+_font_probe.py
+outputs/**/a11y-*.json
+outputs/**/font-probe*/
+outputs/**/font_probe.docx
+outputs/**/qa-font-data/
+outputs/**/rendered-*/
+outputs/**/dingtalk-sync.md
